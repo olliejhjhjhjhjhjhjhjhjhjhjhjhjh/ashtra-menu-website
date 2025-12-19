@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashtra Menu</title>
+  <link rel="icon" type="image/png" href="https://i.imgur.com/wEEA7JB.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🦍 Ashtra Menu</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#discord">Discord</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="https://github.com/olliejhjhjhjhjhjhjhjhjhjhjhjhjh/Ashtra-menu" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="glow-text">UNLEASH THE GORILLA</div>
+    <h1 class="title">Ashtra Menu</h1>
+    <p class="subtitle">The most powerful Gorilla Tag mod menu</p>
+    <button class="cta-button pulse" onclick="scrollToSection('download')">⚡ Download Now</button>
+
+    <!-- Discord image + your rules -->
+<div class="discord-rules-img">
+  <img src="https://i.imgur.com/T5tGDlA.png" alt="Discord Rules" id="discordImg" />
+  <p class="caption">Click to enlarge – Discord server rules</p>
+  <div class="rules-text">
+    <ol>
+      <li>Don't be mean or conduct bad behavior</li>
+      <li>Have fun!</li>
+      <li>No talking in the lofi server (messages may be deleted)</li>
+      <li>Age requirement 13+</li>
+      <li>No NSFW in the server</li>
+    </ol>
+    <small>Failure to follow may result in Warning → Time-out → Ban</small>
+    <a class="discord-link" href="https://discord.gg/pYRGFngcEV" target="_blank">👉 Join Discord Server</a>
+</div>
+
+  <section id="features" class="features">
+    <h2>Mod Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">🏃‍♂️ Speed Boost</div>
+      <div class="feature-card">🕊️ Flight Mode</div>
+      <div class="feature-card">📡 Teleportation</div>
+      <div class="feature-card">🧗 Wall Climb</div>
+      <div class="feature-card">🛡️ Anti-Ban</div>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <h2>⚡ Auto-Download Latest Version</h2>
+    <button class="download-btn glow" onclick="downloadMenu()">📥 Download Latest</button>
+    <p id="last-updated">Loading...</p>
+  </section>
+
+  <footer><p>Made with ❤️ by Ashtra | Not affiliated with Gorilla Tag</p></footer>
+  <script src="renderer.js"></script>
+</body>
+</html>

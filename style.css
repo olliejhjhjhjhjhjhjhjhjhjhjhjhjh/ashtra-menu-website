@@ -1,0 +1,47 @@
+:root {
+  --black: #0A0A0A;
+  --yellow: #FFD700;
+  --neon: #FFEA00;
+  --dark: #111;
+}
+.discord-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: var(--yellow);
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.discord-link:hover {
+  background: var(--neon);
+  box-shadow: 0 0 20px var(--neon);
+}
+body{margin:0;font-family:'Segoe UI',sans-serif;background:var(--black);color:white;scroll-behavior:smooth}
+.navbar{display:flex;justify-content:space-between;padding:1rem 2rem;background:var(--dark);position:sticky;top:0;z-index:1000}
+.nav-links a{color:var(--yellow);text-decoration:none;font-weight:bold;margin-left:1.5rem;transition:color .3s}
+.nav-links a:hover{color:var(--neon);text-shadow:0 0 10px var(--neon)}
+.hero{padding:4rem 2rem 6rem;text-align:center;background:radial-gradient(circle,var(--dark) 0%,var(--black) 100%)}
+.discord-rules-img{margin:2rem auto 0;cursor:pointer;max-width:600px}
+.discord-rules-img img{width:100%;border-radius:12px;border:3px solid var(--yellow);box-shadow:0 0 20px var(--yellow);transition:transform .3s,box-shadow .3s}
+.discord-rules-img:hover img{transform:scale(1.03);box-shadow:0 0 40px var(--neon)}
+.discord-rules-img .caption{margin-top:.5rem;color:var(--neon);font-size:.9rem}
+.rules-text{margin-top:1rem;text-align:left;font-size:.95rem;color:#eee}
+.rules-text ol{margin:.5rem 0;padding-left:1.2rem}
+.rules-text li{margin:.3rem 0}
+.rules-text small{display:block;margin-top:.5rem;color:var(--neon)}
+.glow-text{font-size:1.2rem;color:var(--neon);text-shadow:0 0 15px var(--neon);animation:flicker 1.5s infinite alternate}
+@keyframes flicker{0%{opacity:1}100%{opacity:.7}}
+.title{font-size:4rem;margin:.5rem 0;color:var(--yellow);text-shadow:0 0 20px var(--yellow)}
+.subtitle{font-size:1.3rem;margin-bottom:2rem}
+.cta-button{padding:1.2rem 2.5rem;font-size:1.3rem;background:var(--yellow);color:black;border:none;border-radius:12px;cursor:pointer;transition:transform .3s,box-shadow .3s}
+.cta-button:hover{transform:scale(1.1);box-shadow:0 0 25px var(--yellow)}
+.features,.download{padding:4rem 2rem;text-align:center}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;margin-top:2rem}
+.feature-card{background:var(--dark);padding:2rem;border-radius:12px;border:2px solid var(--yellow);transition:transform .3s,box-shadow .3s}
+.feature-card:hover{transform:translateY(-10px);box-shadow:0 0 20px var(--yellow)}
+.download-btn{padding:1.5rem 3rem;font-size:1.5rem;background:var(--yellow);color:black;border:none;border-radius:12px;cursor:pointer;transition:background .3s,box-shadow .3s}
+.download-btn:hover{background:var(--neon);box-shadow:0 0 30px var(--neon)}
+footer{padding:2rem;text-align:center;font-size:.9rem;color:#666}
